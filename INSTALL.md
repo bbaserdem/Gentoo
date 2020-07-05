@@ -192,7 +192,7 @@ I use btrfs on the system partition.
 The layout I like to use can be seen in my script, but displayed here;
 ```
 /mnt
-├── @var
+├── @variable
 │   ├── lib
 │   │   ├──*libvirt
 │   │   ├── machines
@@ -200,7 +200,7 @@ The layout I like to use can be seen in my script, but displayed here;
 │   │   └── portables
 │   ├── log         : mount point for subvolume @varlog
 │   └── tmp
-├──*@srv
+├──*@server
 ├──*@swap
 │   └── swapfile    : contains the swap file to hibernate to
 ├── @snapshots
@@ -210,9 +210,9 @@ The layout I like to use can be seen in my script, but displayed here;
     ├── (efi)       : mount point for ESP
     ├── (home)      : mount point for home partition
     ├── (opt)       : mount point for seperate opt partition; if used
-    ├── (srv)       : mount point for subvolume @srv
+    ├── (srv)       : mount point for subvolume @server
     ├── (swap)      : mount point for subvolume @swap
-    └── (var)       : mount point for subvolume @var
+    └── (var)       : mount point for subvolume @variable
 * Copy on write disabled (with chattr +C <dir>)
 ```
 
